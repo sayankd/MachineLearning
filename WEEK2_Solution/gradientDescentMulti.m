@@ -18,7 +18,8 @@ for iter = 1:num_iters
     %
 
 
-
+    delta = ((alpha/m).*sum((((X*theta)-y).*X),1));
+    theta = theta-delta';
 
 
 
